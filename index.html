@@ -32,8 +32,6 @@
     --tag-seafood-text: #2b6e86;
     --tag-asian: #f3e8ee;
     --tag-asian-text: #8a3f63;
-    --tag-gout: #eceef0;
-    --tag-gout-text: #4a555e;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -132,21 +130,6 @@
   .dot-mexican  { background: var(--accent3); }
   .dot-italian  { background: var(--accent2); }
   .dot-seafood  { background: #1a6a9a; }
-
-  .gout-note {
-    margin-top: 18px;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px;
-    padding: 12px 16px;
-    font-size: 12px;
-    font-weight: 300;
-    color: rgba(238,240,240,0.6);
-    max-width: 580px;
-    line-height: 1.65;
-  }
-
-  .gout-note strong { color: rgba(238,240,240,0.9); font-weight: 600; }
 
   .view-tabs {
     max-width: 960px;
@@ -505,17 +488,6 @@
     line-height: 1.55;
     margin-bottom: 10px;
     flex: 1;
-  }
-
-  .gout-tip {
-    font-size: 11px;
-    font-weight: 400;
-    color: var(--tag-gout-text);
-    background: var(--tag-gout);
-    border-radius: 6px;
-    padding: 5px 8px;
-    margin-bottom: 8px;
-    line-height: 1.45;
   }
 
   .tags {
@@ -3242,210 +3214,210 @@ const recipes = {
 const meals = [
   { day:1,  name:"Classic Smash Burgers", cuisine:"american", seafood:false,
     desc:"Double smash patties, American cheese, pickles, special sauce on brioche buns. Piled with lettuce, tomato, and onion.",
-    gout:"Keep patties to 4 oz each. Load the toppings to fill the plate." },
+},
 
   { day:2,  name:"Seasoned Beef Tacos", cuisine:"mexican", seafood:false,
     desc:"Lean ground beef with homemade taco seasoning, shredded cheddar, lettuce, tomato, sour cream in crunchy shells.",
-    gout:"Use lean ground beef or mix in ground turkey. Skip store-bought seasoning packets with additives." },
+},
 
   { day:3,  name:"Chicken Alfredo", cuisine:"italian", seafood:false,
     desc:"Grilled chicken breast over fettuccine in a rich parmesan cream sauce.",
-    gout:"Cream and parmesan are gout-neutral. Chicken is the best protein pick here." },
+},
 
   { day:4,  name:"Carne Asada Tacos", cuisine:"mexican", seafood:false,
     desc:"Marinated skirt steak, grilled with char, cilantro, white onion, and lime on warm corn tortillas.",
-    gout:"4–5 oz of steak per person. Pair with rice and black beans to round out the plate." },
+},
 
   { day:5,  name:"Stuffed Chicken Breast", cuisine:"american", seafood:false,
     desc:"Chicken breasts filled with spinach and cream cheese, baked golden with a garlic butter drizzle.",
-    gout:"One of the best gout-friendly dinners on the plan. Chicken and dairy all the way." },
+},
 
   { day:6,  name:"Shrimp Tacos", cuisine:"mexican", seafood:true,
     desc:"Spiced pan-seared shrimp, chipotle slaw, sliced avocado, and fresh lime on warm flour tortillas.",
-    gout:"Keep shrimp to about 4 oz per person. Load up on slaw and avocado to fill the plate." },
+},
 
   { day:7,  name:"Grilled Hotdogs & Oven Fries", cuisine:"american", seafood:false,
     desc:"Grilled all-beef dogs with a full toppings bar — mustard, relish, onion, kraut — and seasoned crispy oven fries.",
-    gout:"1–2 dogs per person. Choose lower-sodium options when available." },
+},
 
   { day:8,  name:"Buttermilk Fried Chicken", cuisine:"american", seafood:false,
     desc:"Buttermilk-brined, double-dredged, cast iron fried — served with mashed potatoes and homemade gravy.",
-    gout:"Use homemade gravy to control sodium and skip the additives in jarred versions." },
+},
 
   { day:9,  name:"Grilled Chicken Tacos", cuisine:"mexican", seafood:false,
     desc:"Juicy grilled chicken thighs, pickled red onion, avocado crema, and cotija on flour tortillas.",
-    gout:null },
+},
 
   { day:10, name:"Chicken Piccata", cuisine:"italian", seafood:false,
     desc:"Pan-seared chicken cutlets in a bright lemon-caper butter sauce over angel hair pasta.",
-    gout:"Lemon and capers are gout-neutral. Great lower-purine Italian dinner." },
+},
 
   { day:11, name:"Herb-Grilled Chicken Thighs", cuisine:"american", seafood:false,
     desc:"Herb-marinated chicken thighs grilled until golden, with charred corn and a crisp green salad.",
-    gout:null },
+},
 
   { day:12, name:"Garlic Butter Shrimp & Rice", cuisine:"american", seafood:true,
     desc:"Shrimp sautéed in garlic herb butter over fluffy white rice with roasted vegetables on the side.",
-    gout:"4 oz shrimp per person. The rice and roasted veg help balance the purine load." },
+},
 
   { day:13, name:"Chicken Marsala", cuisine:"italian", seafood:false,
     desc:"Tender chicken cutlets in a savory mushroom and Marsala wine sauce over buttered egg noodles.",
-    gout:"Chicken-based — solid choice. Mushrooms are fine for gout." },
+},
 
   { day:14, name:"BBQ Pulled Chicken Sandwiches", cuisine:"american", seafood:false,
     desc:"Slow-cooked pulled chicken with homemade BBQ sauce, creamy coleslaw on toasted brioche.",
-    gout:"Homemade BBQ sauce avoids the high-fructose corn syrup in most store-bought versions." },
+},
 
   { day:15, name:"Chicken Birria Tacos", cuisine:"mexican", seafood:false,
     desc:"Braised chicken in rich red chile consommé, dipped tortillas pan-crisped with Oaxacan cheese. Served with dipping broth.",
-    gout:"Red chile birria sauce is totally different from tomato-based pasta sauce — and it's gout-friendly." },
+},
 
   { day:16, name:"Cuban Sandwiches", cuisine:"american", seafood:false,
     desc:"Roasted pork, shaved ham, Swiss cheese, pickles, and yellow mustard pressed on Cuban bread until golden and crispy. Served with seasoned fries.",
-    gout:"Keep the pork and ham portions moderate. Load up on pickles and mustard — they're gout-neutral." },
+},
 
   { day:17, name:"Classic Meatloaf", cuisine:"american", seafood:false,
     desc:"Brown sugar glazed meatloaf with creamy mashed potatoes and buttered green beans.",
-    gout:"One good slice — about 4–5 oz. Fill the rest of the plate with potatoes and beans." },
+},
 
   { day:18, name:"Pork Carnitas Tacos", cuisine:"mexican", seafood:false,
     desc:"Slow-braised crispy pork carnitas, pineapple salsa, pickled jalapeño, and cilantro on corn tortillas.",
-    gout:"Moderate the carnitas. Fresh pineapple salsa and toppings keep it balanced." },
+},
 
   { day:19, name:"Stuffed Shells", cuisine:"italian", seafood:false,
     desc:"Jumbo pasta shells filled with ricotta and spinach, baked in a creamy white garlic sauce.",
-    gout:"All gout-friendly — ricotta, spinach, pasta, cream. One of the cleanest meals on the plan." },
+},
 
   { day:20, name:"Bacon Smash Burgers", cuisine:"american", seafood:false,
     desc:"Crispy bacon, caramelized onions, pepper jack, and chipotle mayo on a toasted brioche bun.",
-    gout:"4 oz patties. One or two strips of bacon is fine — just don't overdo it." },
+},
 
   { day:21, name:"Red Sauce Chicken Enchiladas", cuisine:"mexican", seafood:false,
     desc:"Shredded roasted chicken in corn tortillas, smothered in homemade red chile enchilada sauce and melted cheese.",
-    gout:"Chicken and homemade chile sauce — solid, gout-friendly combo." },
+},
 
   { day:22, name:"Garlic Shrimp Fettuccine", cuisine:"italian", seafood:true,
     desc:"Shrimp tossed with fettuccine in a white wine garlic butter sauce with parsley and lemon zest.",
-    gout:"4 oz shrimp per person. Serve with a big side salad to keep the meal balanced." },
+},
 
   { day:23, name:"Pan-Fried Pork Chops", cuisine:"american", seafood:false,
     desc:"Thick-cut bone-in chops with a golden crust, served with skillet corn and roasted potatoes.",
-    gout:"One good chop per person. Load up on the corn and potatoes to round it out." },
+},
 
   { day:24, name:"Steak & Chicken Fajitas", cuisine:"mexican", seafood:false,
     desc:"Sizzling skirt steak and chicken with peppers and onions — flour tortillas, guac, sour cream, and pico de gallo.",
-    gout:"Go heavier on the chicken, lighter on the steak. All the toppings are gout-neutral." },
+},
 
   { day:25, name:"Three-Cheese Chicken Alfredo", cuisine:"italian", seafood:false,
     desc:"Parmesan, romano, and asiago cream sauce over fettuccine with pan-seared chicken breast.",
-    gout:"Chicken and cream sauce — one of the best gout-friendly Italian meals on this plan." },
+},
 
   { day:26, name:"Fish Tacos", cuisine:"mexican", seafood:true,
     desc:"Crispy beer-battered cod, cabbage slaw, chipotle crema, and pickled red onion on warm corn tortillas.",
-    gout:"White fish like cod is lower in purines than shrimp. Great seafood option." },
+},
 
   { day:27, name:"French Dip Sandwiches", cuisine:"american", seafood:false,
     desc:"Thinly sliced roast beef on a toasted hoagie roll with melted provolone, served with a rich au jus for dipping. Seasoned oven fries on the side.",
-    gout:"Use thinly sliced roast beef and keep it to one sandwich." },
+},
 
   { day:28, name:"Ground Beef Enchiladas", cuisine:"mexican", seafood:false,
     desc:"Seasoned lean ground beef and cheddar rolled in flour tortillas with red chile enchilada sauce.",
-    gout:"Use lean ground beef. Red chile enchilada sauce is fine — not the same as tomato pasta sauce." },
+},
 
   { day:29, name:"Build-Your-Own Burger Bar", cuisine:"american", seafood:false,
     desc:"Full toppings spread — lettuce, tomato, pickles, onion, bacon, multiple cheeses, loaded oven fries. Everyone builds their own.",
-    gout:"4 oz patties. The fun is in the toppings, not the size of the burger." },
+},
 
   { day:30, name:"Malibu Chicken Sandwich", cuisine:"american", seafood:false,
     desc:"Crispy fried chicken breast topped with shaved ham, melted Swiss cheese, and honey mustard on a toasted brioche bun. Seasoned oven fries on the side.",
-    gout:"Chicken keeps it gout-friendly. Go easy on the ham portion — processed meat in moderation." },
+},
 
   { day:31, name:"Carne Asada Platter", cuisine:"mexican", seafood:false,
     desc:"Marinated flank steak with Mexican rice, charro beans, grilled onions, guacamole, and warm tortillas.",
-    gout:"End the month right — 5 oz of steak, then fill the plate with rice, beans, and guac." },
+},
 ];
 
 // Swap pool — alternative meals to swap in for any day
 const swapPool = [
   { name:"Grilled Chicken Sandwich", cuisine:"american", seafood:false,
     desc:"Juicy grilled chicken breast, lettuce, tomato, pickles, and honey mustard on a toasted brioche bun. Seasoned oven fries on the side.",
-    gout:"Grilled over fried keeps purines lower. Great swap any night." },
+},
 
   { name:"Chicken Strip Wraps", cuisine:"american", seafood:false,
     desc:"Crispy chicken strips, shredded lettuce, cheddar, tomato, and ranch in a large flour tortilla. Served with fries.",
-    gout:"Chicken is gout-friendly. Watch the portion size on the wrap — one is plenty." },
+},
 
   { name:"Patty Melt", cuisine:"american", seafood:false,
     desc:"Seasoned beef patty with caramelized onions and melted Swiss on buttered toasted rye bread. Served with fries.",
-    gout:"Keep the patty to 4 oz. Caramelized onions are gout-neutral." },
+},
 
   { name:"Grilled Cheese & Tomato Soup", cuisine:"american", seafood:false,
     desc:"Buttery golden grilled cheese on thick white bread with a warm creamy tomato soup for dipping.",
-    gout:"Low purine, easy on the stomach. One of the most gout-friendly swaps on the list." },
+},
 
   { name:"Pot Roast", cuisine:"american", seafood:false,
     desc:"Slow-braised chuck roast with carrots, potatoes, and onions in a rich beef broth gravy.",
-    gout:"Keep beef to 4-5 oz. Load up on the carrots and potatoes to fill the plate." },
+},
 
   { name:"Carolina BBQ Chicken", cuisine:"american", seafood:false,
     desc:"Pulled chicken thighs in a tangy vinegar-based Carolina BBQ sauce, served on brioche with coleslaw.",
-    gout:"Chicken and vinegar sauce — lower purine than red meat BBQ. Great swap." },
+},
 
   { name:"Chicken Fried Steak", cuisine:"american", seafood:false,
     desc:"Tenderized beef cutlet breaded and fried golden, smothered in creamy white pepper gravy. Served with mashed potatoes and green beans.",
-    gout:"Keep the cutlet to one moderate portion. Fill the plate with mashed potatoes and beans." },
+},
 
   { name:"BLT Club Sandwich", cuisine:"american", seafood:false,
     desc:"Triple-decker with bacon, lettuce, tomato, turkey, and mayo on toasted white bread. Served with chips or fries.",
-    gout:"Go easy on the bacon — one or two strips. Turkey keeps the purine load reasonable." },
+},
 
   { name:"Smothered Chicken Thighs", cuisine:"american", seafood:false,
     desc:"Pan-seared chicken thighs in a creamy onion and mushroom gravy, served over mashed potatoes.",
-    gout:"Chicken thighs and mushrooms are both gout-friendly. One of the best swaps on the list." },
+},
 
   { name:"Honey Mustard Chicken Thighs", cuisine:"american", seafood:false,
     desc:"Oven-baked chicken thighs glazed with honey mustard, served with roasted potatoes and green beans.",
-    gout:"Chicken and honey mustard are both gout-neutral. Easy weeknight swap." },
+},
 
   { name:"Beef and Broccoli", cuisine:"asian", seafood:false,
     desc:"Thinly sliced beef and crisp broccoli stir-fried in a savory garlic-ginger soy sauce, served over rice.",
-    gout:"Keep beef to about 4 oz and load up on the broccoli. Use low-sodium soy sauce to manage sodium." },
+},
 
   { name:"Mongolian Beef", cuisine:"asian", seafood:false,
     desc:"Crispy sliced beef tossed in a sweet-savory soy and brown sugar glaze with scallions, served over rice.",
-    gout:"Keep the beef portion moderate — about 4 oz. Skip the deep-fry and pan-sear instead to lighten it up." },
+},
 
   { name:"Chicken Fried Rice", cuisine:"asian", seafood:false,
     desc:"Wok-fried rice with diced chicken, egg, peas, carrots, and scallions in a light soy-sesame seasoning.",
-    gout:"Chicken and egg are both gout-friendly. Use low-sodium soy sauce and go light on it." },
+},
 
   { name:"Teriyaki Chicken", cuisine:"asian", seafood:false,
     desc:"Pan-seared chicken thighs glazed in a homemade sweet soy teriyaki sauce, served over rice with steamed broccoli.",
-    gout:"Chicken thighs are gout-friendly. Homemade teriyaki lets you control the sodium and sugar." },
+},
 
   { name:"Orange Chicken", cuisine:"asian", seafood:false,
     desc:"Lightly battered chicken pieces tossed in a tangy-sweet orange glaze, served over rice.",
-    gout:"Pan-fry instead of deep-frying to keep it lighter. Chicken itself is gout-friendly." },
+},
 
   { name:"Beef Lo Mein", cuisine:"asian", seafood:false,
     desc:"Stir-fried lo mein noodles with sliced beef, cabbage, carrots, and scallions in a garlic-soy sauce.",
-    gout:"Keep beef to a moderate portion and bulk up the dish with extra vegetables." },
+},
 
   { name:"Sesame Chicken", cuisine:"asian", seafood:false,
     desc:"Crispy chicken pieces tossed in a sticky sesame-soy glaze and topped with toasted sesame seeds, served over rice.",
-    gout:"Pan-sear instead of deep-frying for a lighter version. Chicken is gout-friendly." },
+},
 
   { name:"Shrimp Fried Rice", cuisine:"asian", seafood:true,
     desc:"Wok-fried rice with shrimp, egg, peas, carrots, and scallions in a light soy-sesame seasoning.",
-    gout:"Shrimp is higher in purines than chicken — enjoy this one a little less often and keep the portion modest." },
+},
 
   { name:"Pizza Night", cuisine:"american", seafood:false,
     desc:"Homemade or order out — your call. Load it up however the family wants it.",
-    gout:"Watch sodium on delivery pizza. Homemade lets you control the toppings and portions." },
+},
 
   { name:"Takeout Night", cuisine:"american", seafood:false,
     desc:"Your choice — pick up whatever sounds good tonight.",
-    gout:"Watch sodium and portion sizes. Avoid organ meat dishes and high-purine soups." },
+},
 ];
 
 const weekLabels = ["Week One", "Week Two", "Week Three", "Week Four", "Week Five"];
@@ -3481,204 +3453,204 @@ const breakfasts = [
   { name:"Peanut Butter Banana Overnight Oats", badge:"Fridge · 4 days",
     desc:"Rolled oats, milk, Greek yogurt, peanut butter, and mashed banana layered in a jar. No cooking required.",
     prep:"Make 4-5 jars on Sunday. Stir peanut butter through while warm/soft so it blends, then portion into jars. Grab and eat cold, or warm 30 sec.",
-    gout:"Oats, dairy, and peanut butter are all gout-friendly — a safe grab-and-go pick." },
+},
 
   { name:"Berry Almond Protein Oats", badge:"Fridge · 4 days",
     desc:"Overnight oats with vanilla protein powder, almond milk, chia seeds, and mixed berries stirred in.",
     prep:"Batch 4-5 jars Sunday night. Add berries fresh the morning of if you prefer them less soft, or mix in ahead for a jammier texture.",
-    gout:"Berries and oats are gout-friendly. Choose a whey or plant protein powder without added purine-heavy fillers." },
+},
 
   { name:"Ham & Cheddar Egg Muffins", badge:"Freezer · 2 months",
     desc:"Mini crustless quiches baked in a muffin tin with eggs, diced ham, cheddar, and bell pepper.",
     prep:"Bake a full tray (12) on Sunday. Cool completely, then fridge for the week or freeze in a bag. Microwave from frozen 60-90 sec.",
-    gout:"Eggs and dairy are gout-neutral. Keep the ham portion light — two muffins is a solid grab-and-go breakfast." },
+},
 
   { name:"Bacon & Gruyère Egg Bites", badge:"Fridge · 3 days",
     desc:"Starbucks-style custardy egg bites — blended eggs, cottage cheese, and Gruyère, baked over crisp bacon.",
     prep:"Blend and bake a full tray Sunday using a steam bath in the oven for that silky texture. Fridge 3 days or freeze 2 months. Microwave 45-60 sec.",
-    gout:"Eggs and cheese are gout-neutral. Keep bacon to a light scatter rather than a full strip per bite." },
+},
 
   { name:"Broccoli Cheddar Egg Bites", badge:"Fridge · 3 days",
     desc:"The same silky blended egg bite base, swapped vegetarian with steamed broccoli and sharp cheddar.",
     prep:"Bake alongside the bacon batch (or on its own) Sunday using the same steam-bath method. Fridge 3 days or freeze 2 months.",
-    gout:"Fully gout-friendly — eggs, cheese, and broccoli are all safe. A good vegetarian rotation option." },
+},
 
   { name:"Greek Yogurt Parfait Jars", badge:"Fridge · 3 days",
     desc:"Layered Greek yogurt, granola, and honey-drizzled berries in a mason jar — granola kept separate to stay crunchy.",
     prep:"Layer yogurt and berries in jars Sunday; keep granola in a small side bag or the jar lid and add right before eating.",
-    gout:"Yogurt and berries are gout-friendly. A clean, high-protein grab-and-go option." },
+},
 
   { name:"Vanilla Cinnamon Chia Pudding", badge:"Fridge · 5 days",
     desc:"Chia seeds soaked in milk with vanilla and cinnamon until thick and pudding-like, topped with fruit.",
     prep:"Whisk chia, milk, vanilla, and cinnamon in a big jar or divide into 5 jars right away. Stir again after 30 min to prevent clumping, then refrigerate.",
-    gout:"Chia and dairy are gout-neutral — one of the lowest-fuss make-ahead breakfasts on this list." },
+},
 
   { name:"Freezer Breakfast Burritos", badge:"Freezer · 2 months",
     desc:"Scrambled eggs, black beans, cheese, and salsa rolled into foil-wrapped tortillas for the microwave.",
     prep:"Assemble 6-8 burritos, wrap individually in foil or parchment + freezer bag. Microwave from frozen 2-3 min, flipping halfway.",
-    gout:"Eggs, beans, and cheese are all fine. Go light on any breakfast sausage or bacon add-ins." },
+},
 
   { name:"Freezer Breakfast Sandwiches", badge:"Freezer · 2 months",
     desc:"English muffins layered with fried egg, sausage patty, and cheddar — wrapped individually for the freezer.",
     prep:"Assemble 6 sandwiches, wrap each in parchment + foil, and freeze. Unwrap, microwave 90 sec on a paper towel, flipping once.",
-    gout:"Keep the sausage patty on the smaller side. Eggs and cheddar are otherwise gout-neutral." },
+},
 
   { name:"Make-Ahead Avocado Toast Kit", badge:"Prep components · fresh mash",
     desc:"Bread, toppings, and seasoning fully prepped ahead — you just toast and mash a fresh avocado each morning.",
     prep:"Slice and freeze bread; pre-chop tomato, red onion, and any toppings into a container. Avocado doesn't hold well pre-mashed, so keep whole avocados on the counter and mash one fresh each morning — takes under 2 minutes.",
-    gout:"Avocado, whole-grain bread, and lemon are all gout-friendly. A light poached egg on top adds protein without issue." },
+},
 
   { name:"Apple Cinnamon Baked Oatmeal Cups", badge:"Fridge · 5 days",
     desc:"Individual baked oatmeal cups with grated apple, cinnamon, and a touch of maple — like a healthy muffin.",
     prep:"Bake a full tray on Sunday. Cool, then fridge in a container or freeze in a bag. Microwave 30-45 sec, or eat cold.",
-    gout:"Oats and apple are both gout-friendly — an easy handheld breakfast with no plate needed." },
+},
 
   { name:"Chocolate Peanut Butter Overnight Oats", badge:"Fridge · 4 days",
     desc:"Cocoa powder and peanut butter stirred into classic overnight oats for a dessert-for-breakfast jar.",
     prep:"Batch 4-5 jars Sunday night. Stir well before sealing so the cocoa doesn't clump at the bottom.",
-    gout:"Oats, cocoa, and peanut butter are all gout-friendly — a rich-tasting option that's still safe." },
+},
 
   { name:"Mango Coconut Chia Pudding", badge:"Fridge · 5 days",
     desc:"Chia pudding made with coconut milk and topped with fresh diced mango for a tropical twist.",
     prep:"Whisk chia and coconut milk Sunday, divide into jars, and stir once after 30 min. Top with mango the morning of so it stays fresh.",
-    gout:"Chia, coconut milk, and mango are all gout-neutral — a dairy-free option for the rotation." },
+},
 
   { name:"Spinach & Feta Egg Muffins", badge:"Freezer · 2 months",
     desc:"A vegetarian egg muffin loaded with wilted spinach, feta, and a hint of dill.",
     prep:"Bake a full tray Sunday alongside your other egg muffins. Cool completely, then fridge or freeze in a bag.",
-    gout:"Eggs, spinach, and feta are all gout-friendly. One of the lightest breakfasts on the whole list." },
+},
 
   { name:"Sausage & Cheddar Egg Bites", badge:"Fridge · 3 days",
     desc:"The blended custardy egg bite base loaded with crumbled breakfast sausage and sharp cheddar.",
     prep:"Bake using the same steam-bath method as the other egg bites — cook the sausage and let it cool before folding in.",
-    gout:"Keep the sausage portion modest; eggs and cheddar are otherwise gout-neutral." },
+},
 
   { name:"Banana Nut Baked Oatmeal Bars", badge:"Freezer · 2 months",
     desc:"Dense baked oatmeal bars with mashed banana, walnuts, and a touch of honey — sliceable and portable.",
     prep:"Bake a 9x13 pan Sunday, cool, and slice into bars. Fridge up to 5 days or freeze individually wrapped.",
-    gout:"Oats, banana, and walnuts are all gout-friendly. A filling, no-fork-needed breakfast." },
+},
 
   { name:"Cottage Cheese Berry Bowls", badge:"Fridge · 4 days",
     desc:"High-protein cottage cheese topped with berries, a drizzle of honey, and a sprinkle of granola.",
     prep:"Portion cottage cheese into containers Sunday. Keep berries and granola separate, adding both fresh each morning.",
-    gout:"Cottage cheese and berries are both gout-friendly — one of the highest-protein grab options here." },
+},
 
   { name:"Soft-Baked Banana Oat Breakfast Cookies", badge:"Fridge · 5 days",
     desc:"No-added-sugar cookies made from mashed banana, oats, and peanut butter — a true handheld breakfast.",
     prep:"Bake a batch Sunday, cool completely, and store in an airtight container. Freezes well for longer storage.",
-    gout:"Oats, banana, and peanut butter are gout-friendly — a genuinely portable, one-hand breakfast." },
+},
 
   { name:"Freezer Breakfast Quesadillas", badge:"Freezer · 2 months",
     desc:"Scrambled eggs, cheese, and diced ham folded into a flour tortilla and griddled, then frozen flat.",
     prep:"Assemble and lightly griddle 6-8 quesadillas, cool, then stack with parchment between and freeze in a bag. Reheat in a skillet or microwave.",
-    gout:"Eggs and cheese are gout-neutral. Keep the ham portion light." },
+},
 
   { name:"Pumpkin Spice Overnight Oats", badge:"Fridge · 4 days",
     desc:"Oats soaked with pumpkin purée, milk, and warm spices for a cozy, no-cook fall-flavored breakfast.",
     prep:"Batch 4-5 jars Sunday night. Stir well since pumpkin purée is thick and needs to distribute evenly.",
-    gout:"Oats and pumpkin are gout-friendly — a good seasonal rotation option any time of year." }
+}
 ];
 
 const lunches = [
   { name:"Turkey & Swiss Wraps", badge:"Fridge · 2 days",
     desc:"Sliced turkey, Swiss cheese, lettuce, and honey mustard rolled up in a spinach tortilla, sliced in half.",
     prep:"Assemble Sunday or the night before, wrap tightly in parchment or foil, and refrigerate. Best eaten within 2 days so the tortilla stays fresh.",
-    gout:"Turkey is one of the gout-friendlier deli meats. Keep the portion to about 3-4 oz per wrap." },
+},
 
   { name:"Chicken Caesar Wraps", badge:"Fridge · 2 days",
     desc:"Shredded rotisserie chicken, romaine, parmesan, and Caesar dressing wrapped in a flour tortilla.",
     prep:"Toss chicken with dressing separately and store in a small container; keep lettuce dry. Assemble the wrap the morning you'll eat it so it doesn't get soggy.",
-    gout:"Chicken and parmesan are gout-friendly. Use a light hand with the dressing to keep it from sogging the wrap." },
+},
 
   { name:"Pressed Italian Sub Sandwiches", badge:"Fridge · 3 days",
     desc:"Ham, salami, provolone, lettuce, tomato, and Italian dressing on a pressed hoagie roll — gets better as it sits.",
     prep:"Assemble whole sandwiches, wrap tightly in parchment then foil, and refrigerate something heavy on top overnight to press. Slice in half before packing.",
-    gout:"Keep cured meats like salami to a smaller portion and lean more on veggies and provolone to fill it out." },
+},
 
   { name:"Buffalo Chicken Wraps", badge:"Fridge · 3 days",
     desc:"Shredded chicken tossed in buffalo sauce with ranch, shredded carrot, and celery in a tortilla.",
     prep:"Toss chicken with buffalo sauce and store separately from the tortilla and crunchy veg. Assemble the morning of for the best texture.",
-    gout:"Chicken is a safe protein pick here. Go easy on blue cheese if you add it — moderate dairy is fine, just don't overdo portions." },
+},
 
   { name:"Chickpea Salad Sandwiches", badge:"Fridge · 4 days",
     desc:"Mashed chickpeas with celery, red onion, and a light mayo-mustard dressing on hearty bread — a handheld twist on chickpea salad.",
     prep:"Mash and mix the filling Sunday and store in a container. Spread onto bread fresh each morning so it doesn't get soggy.",
-    gout:"Chickpeas are gout-friendly in moderate portions — one sandwich is a right-sized serving." },
+},
 
   { name:"Greek Chicken Pita Pockets", badge:"Fridge · 3 days",
     desc:"Grilled chicken, cucumber, tomato, feta, and tzatziki stuffed into a warm pita pocket.",
     prep:"Pre-cook and slice chicken and chop veggies Sunday, storing separately from the pita. Stuff the pita fresh each morning to avoid a soggy pocket.",
-    gout:"Chicken, feta, and cucumber are all gout-friendly — one of the lighter handheld lunches on this list." },
+},
 
   { name:"Ham & Swiss Croissant Sandwiches", badge:"Fridge · 3 days",
     desc:"Sliced ham and Swiss cheese with a swipe of dijon on a flaky croissant — simple and office-friendly.",
     prep:"Assemble Sunday, wrap individually in parchment, and refrigerate. Croissants hold up better than soft bread, so these keep well for a few days.",
-    gout:"Keep the ham portion moderate. Swiss cheese and croissant are otherwise gout-neutral." },
+},
 
   { name:"BBQ Chicken Sliders", badge:"Freezer · 1 month",
     desc:"Shredded BBQ chicken and cheddar piled on Hawaiian rolls, baked in a foil pack — a handheld that reheats in one shot.",
     prep:"Assemble a full tray of sliders, wrap in foil, and freeze whole or portion into 2-3 sliders per pack. Reheat from frozen at 350F for 15-20 min, or microwave 90 sec.",
-    gout:"Use a lean shredded chicken breast and homemade BBQ sauce to keep this gout-friendly." },
+},
 
   { name:"Egg Salad Sandwiches", badge:"Fridge · 3 days",
     desc:"Classic chopped hard-boiled eggs with mayo, dijon, and chives on soft white or wheat bread.",
     prep:"Hard-boil a dozen eggs and mix the filling Sunday; store the filling separately and spread onto bread fresh each morning.",
-    gout:"Eggs are gout-neutral, making this one of the safest handheld lunches on the list." },
+},
 
   { name:"Southwest Turkey Wraps", badge:"Fridge · 3 days",
     desc:"Turkey, black beans, corn, pepper jack, and chipotle mayo rolled in a large flour tortilla.",
     prep:"Mix the corn-black bean filling and portion the turkey and cheese Sunday; assemble wraps the morning of for the best texture.",
-    gout:"Turkey and black beans are both gout-friendly picks — keep pepper jack to a light layer." },
+},
 
   { name:"Classic Tuna Salad Sandwiches", badge:"Fridge · 3 days",
     desc:"Flaked tuna with mayo, celery, and a squeeze of lemon on hearty bread — a lunchbox classic.",
     prep:"Mix the filling Sunday and store in an airtight container. Spread onto bread fresh each morning to keep it from getting soggy.",
-    gout:"Tuna is higher in purines than chicken or turkey, so keep the portion moderate and enjoy this one less often than the others." },
+},
 
   { name:"Chicken Salad Croissant Sandwiches", badge:"Fridge · 3 days",
     desc:"Shredded chicken with grapes, celery, and a light mayo dressing piled onto a flaky croissant.",
     prep:"Cook and shred chicken and mix the salad Sunday. Store separately from the croissants and assemble the morning of.",
-    gout:"Chicken is a safe protein pick. Grapes add natural sweetness without any gout concerns." },
+},
 
   { name:"Turkey Club Sandwiches", badge:"Fridge · 2 days",
     desc:"Turkey, bacon, lettuce, and tomato stacked on toasted bread with mayo — a triple-decker classic.",
     prep:"Cook bacon Sunday and store separately. Assemble the sandwich the morning of so the toast stays crisp and the tomato doesn't make it soggy.",
-    gout:"Turkey is gout-friendly; keep the bacon to a couple of strips per sandwich." },
+},
 
   { name:"Caprese Pesto Sandwiches", badge:"Fridge · 2 days",
     desc:"Fresh mozzarella, tomato, basil, and pesto pressed on a crusty roll — a vegetarian handheld with big flavor.",
     prep:"Assemble and wrap tightly Sunday or the night before; pressing it briefly under something heavy helps the flavors meld.",
-    gout:"Mozzarella, tomato, and basil are all gout-friendly — a great vegetarian option for the rotation." },
+},
 
   { name:"Freezer Meatball Sub Sandwiches", badge:"Freezer · 2 months",
     desc:"Mini meatballs in marinara with melted provolone, tucked into a hoagie roll and wrapped for the freezer.",
     prep:"Assemble subs, wrap individually in foil, and freeze. Reheat wrapped in foil at 350F for 20-25 min, or unwrap and microwave 2-3 min.",
-    gout:"Use lean ground beef or turkey meatballs and keep the portion to 3-4 meatballs per sub." },
+},
 
   { name:"Philly Cheesesteak Wraps", badge:"Fridge · 3 days",
     desc:"Thinly sliced steak, sautéed peppers and onions, and provolone rolled into a tortilla.",
     prep:"Cook the steak and veggies Sunday and store together in a container. Warm briefly and roll into a tortilla the morning of.",
-    gout:"Keep the steak portion to about 3-4 oz. Peppers, onions, and provolone are otherwise gout-friendly." },
+},
 
   { name:"Chicken Bacon Ranch Wraps", badge:"Fridge · 3 days",
     desc:"Grilled chicken, crispy bacon, lettuce, and ranch rolled up in a flour tortilla.",
     prep:"Cook chicken and bacon Sunday and store together. Keep lettuce and ranch separate, assembling the wrap the morning of.",
-    gout:"Chicken is a safe base. Keep bacon to a light scatter rather than several full strips." },
+},
 
   { name:"Falafel Pita Wraps", badge:"Fridge · 3 days",
     desc:"Baked falafel with cucumber, tomato, and tahini sauce stuffed into a warm pita — a vegetarian handheld.",
     prep:"Bake a batch of falafel Sunday and store separately from the veggies and pita. Warm falafel briefly and stuff the pita fresh each morning.",
-    gout:"Chickpea-based falafel is fine in moderate portions — a solid vegetarian rotation option." },
+},
 
   { name:"Freezer PB&J Pocket Sandwiches", badge:"Freezer · 2 months",
     desc:"Homemade crustless peanut butter and jelly pockets, sealed at the edges and frozen — a copycat of the grocery-store kind.",
     prep:"Assemble a batch Sunday, flash-freeze on a sheet pan for 2 hours, then transfer to a freezer bag. Grab one straight from the freezer — it thaws by lunchtime.",
-    gout:"Peanut butter and jelly are both gout-friendly — an easy, kid-approved option to keep in rotation." },
+},
 
   { name:"Ham & Cheese Pinwheel Wraps", badge:"Fridge · 3 days",
     desc:"Ham, cheddar, and cream cheese spread rolled into a tortilla and sliced into bite-sized pinwheels.",
     prep:"Assemble and roll tightly Sunday, then refrigerate whole. Slice into pinwheels the morning of (or the night before) for the freshest bite.",
-    gout:"Keep the ham portion moderate. Cheddar and cream cheese are otherwise gout-neutral." }
+}
 ];
 
 function getDayName(dayNum) {
@@ -3804,14 +3776,13 @@ function buildCardHTML(meal, day) {
   tagsHTML += `<span class="cuisine-tag tag-${meal.cuisine}">${meal.cuisine.charAt(0).toUpperCase()+meal.cuisine.slice(1)}</span>`;
   if (meal._swapped) tagsHTML += `<span class="cuisine-tag tag-swap">Swapped</span>`;
 
-  const goutHTML = meal.gout ? `<div class="gout-tip">💧 ${meal.gout}</div>` : '';
+
 
   return `
     <div class="day-label">${getDayName(day)} · Day ${day}</div>
     <div class="day-num">${day}</div>
     <div class="meal-name" onclick="openRecipe('${meal.name.replace(/'/g, "\\'")}')">${meal.name}</div>
     <div class="meal-desc">${meal.desc}</div>
-    ${goutHTML}
     <div class="tags">${tagsHTML}</div>
     <div class="card-actions">
       <button class="check-btn" onclick="toggleDay(${day})">
@@ -4493,13 +4464,12 @@ function setAllBfLunchSelected(items, on) {
 
 function buildPrepCardHTML(item) {
   const selected = getBfLunchSelected().includes(item.name);
-  const goutHTML = item.gout ? `<div class="gout-tip">💧 ${item.gout}</div>` : '';
+
   return `
     <div class="prep-badge">${item.badge}</div>
     <div class="meal-name" onclick="openRecipe('${item.name.replace(/'/g, "\\'")}')">${item.name}</div>
     <div class="meal-desc">${item.desc}</div>
     <div class="prep-note">🧊 ${item.prep}</div>
-    ${goutHTML}
     <div class="card-actions">
       <button class="grocery-add-btn${selected ? ' added' : ''}" onclick="toggleBfLunchItem('${item.name.replace(/'/g, "\\'")}')">
         ${selected ? '✓ On grocery list' : '🛒 Add to grocery list'}
